@@ -1,0 +1,27 @@
+[class *= "grid-col-"] {
+    float: left;
+    width: 100%;
+}
+
+.grid-col-6of10 {
+    width: 66.666%;
+}
+
+.grid-row:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+@media only screen and (min-width: 45em) {
+    .grid-col-3of10 {
+        width: 33.333%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 75em) {
+    .grid-col-5of10 {
+        width: 50%;
+    }
+}

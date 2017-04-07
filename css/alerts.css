@@ -1,0 +1,188 @@
+.alerts {
+    background-color: #b7c2ce;
+    color: #f9fafc;
+}
+
+.alerts .alerts_content {
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.alerts .alerts_content figure {
+    margin: 0;
+}
+
+.alerts .alerts_content .twitter-icon {
+    display: block;
+    max-height: 30%;
+    width: auto;
+    margin: 0 auto;
+}
+
+.parallax-overhead {
+    display: none;
+}
+
+@media only screen and (min-width: 20em) {
+    .alerts {
+        padding-top: 7rem;
+        padding-bottom: 6rem;
+    }
+
+    .alerts .alerts_content {
+        padding: 0 2rem;
+    }
+
+    .alerts .alerts_content h1 {
+        font-size: 1.5rem;
+    }
+
+    .alerts .alerts_content p {
+        font-size: 0.8rem;
+        margin: 1rem 1.7rem;
+    }
+
+    .alerts .alerts_content .twitter-widget {
+        display: none;
+    }
+
+    .alerts .alerts_content .twitter-icon {
+        margin-top: 2rem;
+    }
+
+    .alerts .alerts_content .twitter-icon img {
+        margin-left: 30%;
+        width: 33%;
+        height: auto;
+    }
+
+    .alerts .alerts_content .twitter-icon figcaption {
+        margin: 0.5rem 1rem; 
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (min-width: 30em) {
+    .alerts .alerts_content {
+        padding: 0 4rem;
+    }
+
+    .alerts .alerts_content p {
+        font-size: 0.8rem;
+        margin: 1.5rem 2rem;
+    }
+
+    .alerts .alerts_content .twitter-icon {
+        margin-top: 4rem;
+    }
+
+    .alerts .alerts_content .twitter-icon img {
+        width: 25%;
+        height: auto;
+    }
+
+    .alerts .alerts_content .twitter-icon figcaption {
+        margin: 1rem 3rem;
+    }
+}
+
+@media only screen and (min-width: 45em) {
+    .alerts .alerts_content {
+        padding: 0 6rem;
+    }
+
+    .alerts .alerts_content .twitter-icon {
+        margin-top: 4rem;
+    }
+
+    .alerts .alerts_content .twitter-icon img {
+        margin-left: 40%;
+        width: 15%;
+        height: auto;
+    }
+
+    .alerts .alerts_content .twitter-icon figcaption {
+        margin: 1rem 6rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 56.25em) {
+    .alerts .alerts_content {
+        padding: 0 7rem;
+    }
+
+    .alerts .alerts_content h1 {
+        font-size: 1.8rem;
+    }
+
+    .alerts .alerts_content p {
+        font-size: 0.9rem;
+        margin: 1rem 3rem;
+    }
+
+    .alerts .alerts_content .twitter-icon {
+        margin-top: 3rem;
+    }
+
+    .alerts .alerts_content .twitter-icon img {
+        margin-left: 40%;
+        width: 15%;
+        height: auto;
+    }
+
+    .alerts .alerts_content .twitter-icon figcaption {
+        margin: 2rem 6rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 75em) {
+    .parallax-overhead {
+        display: block;
+        height: 60%;
+        opacity: 0.8;
+        background-image:url("../img/snowy-road-birds-eye.jpg");
+        /*image retrieved from https://pixabay.com/en/snowy-trees-road-cars-forest-2104139/*/
+    }
+
+    .alerts {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    .alerts .alerts_content {
+        padding: 0 17rem;
+    }
+
+    .alerts .alerts_content h1 {
+        font-size: 2rem;
+    }
+
+    .alerts .alerts_content p {
+        font-size: 1rem;
+        margin: 1rem 5rem 1rem 2rem;
+    }
+
+    .alerts .alerts_content .twitter-widget {
+        display: block;
+        margin: 0;
+    }
+
+    .alerts .alerts_content .twitter-icon {
+        margin-top: 4rem;
+    }
+
+    .alerts .alerts_content .twitter-icon img {
+        margin-left: 32%;
+        width: 20%;
+        height: auto;
+    }
+
+    .alerts .alerts_content .twitter-icon figcaption {
+        font-size: 0.9rem;
+        margin: 1rem 5rem 1rem 3rem;
+        text-align: left;
+    }
+}

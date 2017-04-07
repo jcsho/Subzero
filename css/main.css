@@ -1,0 +1,59 @@
+/* color palette - snow white
+    http://colorpalettes.net/color-palette-2990/
+    #b7c2ce - dark slate grey
+    #e1e8ef - slate grey
+    #ebeef3 - light grey
+    #f9fafc - snow grey
+    #262626 - slate black
+    #6989af - dark slate blue
+    #82a4b3 - slate blue
+    */
+
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    cursor: auto;
+    color: #262626;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-size:16px;
+}
+
+body, html {
+    height: 100%;
+    font-size: 100%;
+}
+
+a {
+    color: #6989af;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #82a4b3;
+}
+
+nav {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    display: table;
+}
+
+button {
+    padding: 0;
+}
+
+figure {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}

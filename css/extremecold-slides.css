@@ -1,0 +1,192 @@
+/*code adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade*/
+.slide_container {
+    display: none;
+}
+
+/*code from https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries */
+@media only screen and (min-width: 45em)  {
+    .display_container img {
+        display: block;
+    }
+
+    .display_container img {
+        display: block;
+        width: auto;
+        height:100%;
+        overflow: hidden;
+    }
+
+    .display_container .overlay {
+        position:absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.7;
+        width: 100%;
+        height: 100%;
+        transition: .5s ease;
+        background-color: #000;
+    }
+
+    .display_container {
+        position: relative;
+        width: 100%;
+    }
+
+    .text {
+        color: #fff;
+        font-size: 3rem;
+        text-transform: capitalize;
+        position: absolute;
+        left: 50%;
+        padding: 0 15% 0 0;
+        top: 20%;
+    }
+
+    .arctic-outflow {
+        top: 15%;
+        padding: 0 8% 0 0;
+    }
+
+    .text h1 {
+        font-size: 0.8rem;
+        margin: 0 1rem;
+    }
+
+    .text p{ 
+        font-size: 0.6rem;
+        margin: 1rem 3rem;
+    }
+
+    .center {
+        text-align: center;
+        margin-top: 1emx;
+        margin-bottom: 1em;
+        font-size: 1.125em;
+        padding: 0.01em 1em;
+        position: absolute;
+        left: 50%;
+        bottom: 2%;
+        transform: translate(-50%,0%);
+        -ms-transform: translate(-50%,0%);
+    }
+
+    /*code adapted from https://www.w3schools.com/howto/howto_js_slideshow.asp*/
+    .slide_container {
+        display: block;
+        width: 100%;
+        max-height: 100%;
+        overflow:hidden;
+        position:relative;
+        margin: auto;
+    }
+
+    .slide {
+        display: none;
+    }
+
+    .prev, .next {
+        text-decoration: none;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -1.375em;
+        padding: 1em;
+        color: white;
+        font-weight:bold;
+        font-size: 1.125em;
+        transition:0.6s ease;
+        border-radius: 0 0.1875em 0.1875em 0;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 0.1875em 0 0 0.1875em;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .dot {
+        cursor:pointer;
+        height: 0.625em;
+        width: 0.625em;
+        margin: 0 auto;
+        background-color: #f9fafc;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+        background-color: #262626;
+    }
+
+    /*fade animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+}
+
+@media only screen and (min-width: 56.25em) {
+    .text {
+        font-size: 2rem;
+    }
+
+    .text h1 {
+        font-size: 1rem;
+    }
+
+    .text p {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width: 75em) {
+    .display_container .overlay {
+        opacity: 0;
+    }
+
+    .display_container:hover .overlay {
+        opacity: 0.7;
+    }
+
+    .center {
+        bottom: 5%;
+    }
+
+    .text {
+        top: 20%;
+    }
+
+    .dot {
+        height: 1em;
+        width: 1em;
+    }
+
+    .prev, .next {
+        font-size: 1.875em;
+    }
+}
+
+@media only screen and (max-height: 45em) {
+    .slide_container {
+        display: none;
+    }
+}

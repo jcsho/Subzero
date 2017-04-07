@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Extreme Cold - CCC</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/extremecold.css">
+    <link rel="stylesheet" href="css/extremecold-slides.css">
+    <link rel="stylesheet" href="css/stayingsafe.css">
+    <link rel="stylesheet" href="css/alerts.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/grids.css">
+    <link href="img/subzero_favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <!--mobile navigation-->
+        <!--code adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp-->
+        <div id="mobile_nav" class="nav_overlay">
+
+            <a href="javscript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <div class="links">
+                <a onclick="closeNav()" href="#extremecold">Extreme Cold</a>
+                <a onclick="closeNav()" href="#safe">Staying Safe</a>
+                <a onclick="closeNav()" href="#alerts">Alerts</a>
+                <a onclick="closeNav()" href="#aboutus">About</a>
+            </div>
+
+        </div>
+
+        <!--navigation bar-->
+        <nav class="top_nav">
+            <div class="nav_bar">
+                <div class="nav_home">
+                    <a id="homebtn" href="#home">
+                        <!--logo size 70px-->
+                        <img src="img/subzero_logo.png">
+                    </a>
+                </div>
+
+                <div class="nav_button" onclick="openNav()">
+                    <img src="img/menu_white.png" />
+                </div>
+
+                <!--navigation tabs for sizes greater than 1200px-->
+                <div class="nav_tabs">
+                    <div class="nav_tabs_line">
+                        <li>
+                            <a href="#extremecold">
+                                <h2>Extreme Cold</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#safe">
+                                <h2>Staying Safe</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#alerts">
+                                <h2>Alerts</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#aboutus">
+                                <h2>About</h2>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="parallax-landing" id="home">
+        <div class="landing-overlay"></div>
+        <div class="landing-page">
+            <img src="img/subzero_logo.png">
+        </div>
+    </div>
+
+    <article class="extremecold" id="extremecold">
+        <div class="extremecold_content">
+            <div class="grid-row">
+
+                <h1>What Is Extreme Cold?</h1>
+
+                <p>The World Meteorological Organization defines Severe Weather as “any dangerous meteorological phenomena with
+                    the potential to cause damage, serious social disruption, or loss of human life”. Such weather events
+                    are not easy to predict as they may be localized and occur with little warning. For the purpose of emergency
+                    response, severe cold weather events in Vancouver are defined as:</p>
+
+                <div class="grid-col-3of10">
+                    <figure>
+                        <img src="img/snowfall_no-credit.png">
+                        <!-- image retrieved from https://thenounproject.com/search/?q=snow&i=854601-->
+                        <figcaption>snowfall</figcaption>
+                    </figure>
+
+                    <div class="mobile-info">
+                        <h2>warning</h2>
+                        <p>10 cm or more of snowfalls within 12 hours or less;<br>OR<br>5 cm or more of snow falls within 6
+                            hours or less.</p>
+                        <h2>concern</h2>
+                        <p>Snow accumulations over 5 cm for an extended period of time, with temperatures of 3&deg;C and below.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid-col-3of10">
+                    <figure>
+                        <img src="img/thermometer_no-credit.png">
+                        <!-- image retrieved from https://thenounproject.com/search/?q=cold&i=710335-->
+                        <figcaption>extreme cold, arctic outflow</figcaption>
+                    </figure>
+
+                    <div class="mobile-info">
+                        <h2>warning</h2>
+                        <p>Extreme Cold: Issued when the temperature or wind chill is expected to reach minus 35&deg;C for at
+                            least two hours.
+                            <br> Arctic Outflow: Any combination of wind speed and temperature giving a wind chill of -20&deg;C
+                            or lower for 6 hours or more. A separate Wind Warning is not required.</p>
+                        <h2>concern</h2>
+                        <p>General concerns when temperature expected to reach -10&deg;C for tow consecutive nights. GVSS Shelter
+                            Acitivations ocur at -2&deg;C, near 0&deg;C with heavy rain, high winds or snow accumulation</p>
+                    </div>
+                </div>
+
+                <div class="grid-col-3of10">
+                    <figure>
+                        <img src="img/sleet_no-credit.png">
+                        <!-- image retrieved from https://thenounproject.com/search/?q=blizzard&i=217702-->
+                        <figcaption>winter storms, freezing rain, blizzards</figcaption>
+                    </figure>
+
+                    <div class="mobile-info">
+                        <h2>warning</h2>
+                        <p>Occurrence of freezing rain that is expected to pose a hazard to transportation or property;<br>OR<br>Freezing
+                            rain of duration 2 hours or more.</p>
+                        <p>70 km/h or more sustained wind;<br>and/or<br>Gusts to 90 km/h or more.</p>
+                    </div>
+                </div>
+
+                <p>Special Weather Statements and Warnings issued by Environment Canada (EC) are useful prompts for local risk
+                    assessments. However, these alerts are regional and do not always provide sufficient details regarding
+                    the Vancouver microclimate (i.e. snowfall levels are often higher in parts of the Fraser Valley).
+                </p>
+
+                <div class="center-align">
+                    <div class="learnmore">
+                        <a href="#extremecold-info">
+                            <h3>learn more</h3>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <div class="slide_container" id="extremecold-info">
+        <div class="slide display_container fade">
+            <!--image retrieved from https://pixabay.com/en/street-person-walk-snow-winter-1209401/ -->
+            <img src="img/snow_fall.jpg">
+            <div class="overlay">
+                <div class="text">snow fall
+                    <h1>warning</h1>
+                    <p>10 cm or more of snowfalls within 12 hours or less;<br>OR<br>5 cm or more of snow falls within 6 hours
+                        or less.</p>
+                    <h1>concern</h1>
+                    <p>Snow accumulations over 5 cm for an extended period of time, with temperatures of 3&deg;C and below.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide display_container fade">
+            <!--image retrieved from https://pixabay.com/en/snow-bw-vancouver-freeze-landscape-2111976/ -->
+            <img src="img/extreme_cold-arctic_outflow.jpg">
+            <div class="overlay">
+                <div class="text arctic-outflow">arctic outflow
+                    <h1>warning</h1>
+                    <p>Extreme Cold: Issued when the temperature or wind chill is expected to reach minus 35&deg;C for at least
+                        two hours.
+                        <br> Arctic Outflow: Any combination of wind speed and temperature giving a wind chill of -20&deg;C
+                        or lower for 6 hours or more. A separate Wind Warning is not required.</p>
+                    <h1>concern</h1>
+                    <p>General concerns when temperature expected to reach -10&deg;C for tow consecutive nights. GVSS Shelter
+                        Acitivations ocur at -2&deg;C, near 0&deg;C with heavy rain, high winds or snow accumulation</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide display_container fade">
+            <!--image retrieved from http://wallpaperswide.com/hot_summer_rain-wallpapers.html -->
+            <img src="img/freezing_rain.jpg">
+            <div class="overlay">
+                <div class="text">freezing rain
+                    <h1>warning</h1>
+                    <p>Occurrence of freezing rain that is expected to pose a hazard to transportation or property;<br>OR<br>Freezing
+                        rain of duration 2 hours or more.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide display_container fade">
+            <!--image retrieved from https://pixabay.com/en/wintry-tree-beech-wind-buche-2020397/ -->
+            <img src="img/wind_cropped.jpg">
+            <div class="overlay">
+                <div class="text">wind
+                    <h1>warning</h1>
+                    <p>70 km/h or more sustained wind;<br>and/or<br>Gusts to 90 km/h or more.</p>
+                </div>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlide(+1)">&#10095;</a>
+
+        <div class="center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+    </div>
+
+    <article class="safe" id="safe">
+        <div class="safe_content">
+            <div class="grid-row">
+                <h1>HOW TO STAY SAFE</h1>
+                <!-- <div class="grid-col-6of10"> -->
+
+                <div class="icon-row">
+                    <h2>HELPING OTHERS</h2>
+
+
+                    <div class="grid-col-3of10">
+
+                        <figure>
+                            <img alt="shovel" src="img/shovel.png">
+                            <!-- image retrieved from https://thenounproject.com/search/?q=snow+shovel&i=807776 -->
+                            <figcaption>Shovel snow off your sidewalks and assist your neighbours with theirs</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="grid-col-3of10">
+
+                        <figure>
+                            <img alt="salt" src="img/salt.png">
+                            <!-- image retrieved from https://thenounproject.com/search/?q=salt&i=705369 -->
+                            <figcaption>Salt shovelled areas to prevent ice build-up</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="grid-col-3of10">
+
+                        <figure>
+                            <img alt="family" src="img/family.png">
+                            <!-- image retrieved from https://thenounproject.com/search/?q=people&i=940462 -->
+                            <figcaption>Check on neighbours, family and friends who may be vulnerable in these weather conditions
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="icon-row">
+                    <!--<h1>HOW TO STAY SAFE</h1>-->
+                    <h2>HELPING YOURSELF</h2>
+
+                    <div class="grid-col-3of10">
+
+                        <figure>
+                            <img alt="clothing" src="img/clothing.png">
+                            <!-- image retrieved from https://thenounproject.com/search/?q=warm+clothes&i=415992 -->
+                            <figcaption>Wear necessary personal protective equipment</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="grid-col-3of10">
+
+                        <figure>
+                            <img alt="caution" src="img/caution.png">
+                            <!-- image retrieved from https://thenounproject.com/search/?q=caution&i=861571 -->
+                            <figcaption>When coming across any hazardous areas, stay clear and be safe</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="grid-col-3of10">
+
+                        <figure>
+                            <img alt="phone" src="img/phone.png">
+                            <!-- image retrieved from https://thenounproject.com/search/?q=phone&i=892021 -->
+                            <figcaption>Report any street ice or other snow-related hazards to 311 (alternate number: 604-873-7000)</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <!--<p><strong>Get the VanConnect app —</strong> a quick and easy way to connect with the city 24 hours a day, 7 days
+                a week. VanConnect can help you to report hazards, flooding or other issues. Give a short description, add
+                the location and upload a photo with your submission.
+                <a href="http://vancouver.ca/vanconnect.aspx"> http://vancouver.ca/vanconnect.aspx</a></p>-->
+            </div>
+        </div>
+    </article>
+
+    <div class="parallax-overhead"></div>
+
+    <article class="alerts" id="alerts">
+        <div class="alerts_content">
+            <div class="grid-row">
+
+                <div class="grid-col-5of10">
+                    <h1>Alerts</h1>
+
+                    <p id="CityofVancouver">
+                        The City of Vancouver is implementing its Severe Weather plan to counteract any adverse impacts on the public, critical infrastructure,
+                        or municipal services.
+                    </p>
+
+                    <p>
+                        Information on the City’s response may be found at vancouver.ca or by calling 311.
+                    </p>
+
+                    <p>
+                        More information on Severe Weather Statements or Warnings can be found at <a href="weather.gc.ca/warnings"> weather.gc.ca/warnings </a>
+                    </p>
+
+                    <figure class="twitter-icon">
+                        <a href="https://twitter.com/yvrwx?ref_src=twsrc%5Etfw&ref_url=file%3A%2F%2F%2FD%3A%2FDocuments%2FIAT%2520235%2FProject%25204%2FTest%2Findex.html">
+                            <img src="img/twitter_white.png" /></a>
+                        <figcaption>Follow YVR Vancouver Weather on Twitter for the latest weather updates!</figcaption>
+                    </figure>
+
+                </div>
+
+                <div class="grid-col-5of10">
+
+                    <figure class="twitter-widget">
+                        <a class="twitter-timeline" data-chrome="noheader nofooter" data-width="520" data-height="560" data-link-color="#738dae"
+                            href="https://twitter.com/yvrwx"></a>
+                        <!--Retrieved from: https://twitter.com/yvrwx?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor -->
+                    </figure>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <div class="parallax-overhead"></div>
+
+    <article class="aboutus" id="aboutus">
+        <div class="aboutus_content">
+            <div class="grid-row">
+
+                <h1>About</h1>
+
+                <h2>Risk Assessment</h2>
+
+                <p>The 2008 <a href="http://vancouver.ca/">City of Vancouver</a> (COV) Hazard Risk and Vulnerability Assessment
+                    (HRVA) and the 2013 Metro Vancouver HRVA both identify extreme weather as a primary hazard of concern
+                    for our region. Furthermore, COV’s Climate Adaptation Strategy highlights the risks from severe weather
+                    episodes which are becoming more frequent and damaging.
+                </p>
+
+                <p>Although the safety of first responders and the public are of primary concern, the potential effects of severe
+                    weather on transportation, energy, utilities, communications/IT, and water infrastructure can heavily
+                    impact the City’s capacity to provide critical municipal services.</p>
+
+                <div class="grid-col-5of10">
+                    <figure>
+                        <img src="img/vancouver-waterline.jpg" alt="City of Vancouver">
+                    </figure>
+                </div>
+
+                <div class="grid-col-5of10">
+
+                    <h2>Who is Vulnerable?</h2>
+
+                    <p>Individuals suffering from social isolation, those living alone with mobility and health issues, and
+                        homeless populations are particularly vulnerable to severe weather episodes (particularly long term
+                        events).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <script src="js/slide.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/landing.js"></script>
+    <script src="js/twitter.js"></script>
+
+</body>
+
+</html>

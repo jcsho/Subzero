@@ -1,0 +1,224 @@
+/*code adapted from http://stackoverflow.com/questions/32094321/how-to-animate-navigation-bar-with-jquery */
+/*top bar and border*/
+.top_nav {
+    display:block;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: none;
+    transition: 500ms;
+    padding-top: 2.5rem;
+}
+
+/*nav bar, width*/
+.top_nav .nav_bar {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 70%;
+}
+
+.nav_bar:after, .nav_bar:before {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.nav_bar li {
+    list-style-type: none;
+}
+
+.nav_bar li a {
+    display: inline-block;
+    color: #f9fafc;
+    line-height: inherit;
+    text-decoration: none;
+}
+
+.nav_bar .nav_home {
+    padding-top: 0.4rem;
+    float: left;
+    display: block;
+}
+
+.nav_bar .nav_home img {
+    width: auto;
+    max-height: 4.375em;
+}
+
+.nav_bar .nav_tabs {
+    transition: 0.2s;
+    padding: 1.1rem 0;
+}
+
+.nav_bar .nav_tabs .nav_tabs_line {
+    width: 100%;
+    vertical-align: middle;
+    text-transform: capitalize;
+}
+
+.nav_bar .nav_tabs .nav_tabs_line li {
+    font-size: 0.6rem;
+    font-weight: lighter;
+    display: inline-block;
+}
+
+.nav_bar .nav_tabs .nav_tabs_line li a:hover {
+    transition: .5s;
+    color: #b7c2ce;
+}
+
+.nav_button {
+    display: none;
+}
+
+@media only screen and (max-width: 75em) {
+    .top_nav {
+        background: #262626;
+        opacity: 0.8;
+        padding: 0;
+    }
+
+    .top_nav .nav_bar {
+        width: 100%;
+    }
+
+    .nav_bar .nav_home {
+        width: 80%;
+        text-align: left;
+    }
+
+    .nav_bar .nav_home img {
+        width: auto;
+        max-height: 3.125em;
+        margin-left: 20%;
+    }
+
+    .nav_bar .nav_tabs {
+        display: none;
+    }
+
+    .nav_bar .nav_button {
+        display: block;
+        float: left;
+        width: 20%;
+        cursor: pointer;
+        padding-top: 0.4rem;
+    }
+
+    .nav_button img {
+        height: 3.125em;
+        opacity: 1;
+    }
+
+    /*code adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
+    .nav_overlay {
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 5;
+        right: 0;
+        top: 0;
+        background-color: #f9fafc;
+        overflow-y: hidden;
+        transition: 0.2s;
+    }
+
+    .nav_overlay .links {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .nav_overlay .links a {
+        text-decoration: none;
+        color: #262626;
+        font-size: 1.8rem;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .nav_overlay .closebtn {
+        position: absolute;
+        top: 2%;
+        right: 10%;
+        font-size: 3rem;
+        color: #262626;
+    }
+
+    .nav_overlay .links a:hover, .overlay .links a:focus, .nav_overlay .closebtn:hover {
+        color: #b7c2ce;
+    }
+}
+
+/*between FHD and tablet sizes*/
+@media only screen and (min-width: 75em) {
+
+    .top_nav.past-landing {
+        background: #262626;
+        opacity: 0.8;
+        padding: 0;
+    }
+
+    .nav_bar .nav_home {
+        width: 20%;
+        opacity: 0;
+        text-align: left;
+    }
+
+    .nav_bar .nav_home img {
+        width: auto;
+        max-height: 4.375em;
+        margin-left: 20%;
+    }
+
+    .nav_bar .nav_tabs {
+        width: 80%;
+        float: left;
+        text-align: right;
+        display: table;
+    }
+
+    .nav_bar .nav_tabs .nav_tabs_line {
+        display: table-cell;
+    }
+
+    .nav_bar .nav_tabs .nav_tabs_line li {
+        width: 20%;
+    }
+
+    .nav_home.past-landing {
+        opacity:1;
+    }
+
+    .nav_button {
+        display: none;
+    }
+
+    .nav_overlay {
+        display: none;
+    }
+}
+
+@media only screen and (max-height:43.75em) {
+    .nav_overlay .links {
+        top: 10%;
+    }
+
+    .nav_overlay .links a {
+        padding: 0.5rem;
+    }
+}
+
+@media only screen and (min-height:43.75em) {
+    .nav_overlay .links {
+        top: 15%;
+    }
+
+    .nav_overlay .links a {
+        padding: 2.5rem;
+    }
+}

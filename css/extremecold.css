@@ -1,0 +1,242 @@
+.extremecold {
+    background-color: #ebeef3;
+}
+
+.extremecold .extremecold_content {
+    margin: 0 auto;
+    width: 100%;
+    text-align: left;
+}
+
+.extremecold .extremecold_content figure {
+    width: 100%;
+    display: block;
+}
+
+.extremecold .extremecold_content figcaption {
+    text-transform: capitalize;
+}
+
+.extremecold .extremecold_content h1 {
+    text-align: center;
+}
+
+.extremecold .extremecold_content .center-align {
+    width: 100%;
+}
+
+.extremecold .extremecold_content .center-align .learnmore {
+    background: none;
+    border-radius: 0.3125em;
+    border: 0.125em solid #262626;
+    text-align: center;
+    width: 9.375em;
+    padding: 0.2rem 0;
+}
+
+.extremecold .extremecold_content .center-align .learnmore a {
+    color: #262626;
+}
+
+.extremecold .extremecold_content .center-align .learnmore h3 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+.extremecold .extremecold_content .center-align .learnmore:hover {
+    border: 0.125em solid #f9fafc;
+    background: #262626;
+}
+
+.extremecold .extremecold_content .center-align .learnmore:hover a {
+    color:#f9fafc;
+}
+
+@media only screen and (min-width: 20em) {
+    .extremecold {
+        padding-top: 6rem;
+        padding-bottom: 4rem;
+    }
+
+    .extremecold .extremecold_content {
+        padding: 0 1.5rem;
+    }
+
+    .extremecold .extremecold_content h1 {
+        font-size:1.3rem;
+    } 
+
+    .extremecold .extremecold_content p {
+        margin: 0;
+        font-size: 0.8rem;
+    }
+
+    .extremecold .extremecold_content figure {
+        margin: 2rem 0;
+    }
+
+    .extremecold .extremecold_content figure img {
+        margin-left: 30%;
+        width: 30%;
+    }
+
+    .extremecold .extremecold_content figcaption {
+        font-weight: bold;
+        padding: 1rem 0;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .extremecold .extremecold_content .center-align {
+        display: none;
+    }
+
+    .extremecold .extremecold_content .mobile-info {
+        display: block;
+        font-size: 0.8rem;
+        margin: 2.5rem 0;
+    }
+
+    .extremecold .extremecold_content .mobile-info h2 {
+        font-size: 0.9rem;
+        margin: 1rem 2rem;
+    }
+
+    .extremecold .extremecold_content .mobile-info p {
+        margin: 1em 3rem;
+    }
+}
+
+@media only screen and (min-width: 30em) {
+    .extremecold {
+        padding-bottom: 4rem;
+    }
+
+    .extremecold .extremecold_content {
+        padding: 0 3rem;
+    }
+
+    .extremecold .extremecold_content h1 {
+        font-size:1.3rem;
+    } 
+
+    .extremecold .extremecold_content p {
+        margin: 0;
+        font-size: 0.8rem;
+    }
+
+    .extremecold .extremecold_content figure {
+        margin: 2rem 0;
+    }
+
+    .extremecold .extremecold_content figure img {
+        width: 20%;
+        margin-left: 40%;
+    }
+
+    .extremecold .extremecold_content figcaption {
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media only screen and (min-width: 45em) {
+    .extremecold {
+        padding-bottom: 4rem;
+    }
+
+    .extremecold .extremecold_content {
+        padding: 0 4rem;
+    }
+
+    .extremecold .extremecold_content h1 {
+        font-size:1.5rem;
+    } 
+
+    .extremecold .extremecold_content p {
+        margin: 2rem 0.2rem 2rem 3rem;
+        font-size: 0.9rem;
+    }
+
+    .extremecold .extremecold_content figure {
+        margin: 1rem 0;
+        display: block;
+    }
+
+    .extremecold .extremecold_content figure img {
+        margin: 0;
+        width: 35%;
+    }
+
+    .extremecold .extremecold_content figcaption {
+        padding: 1.3rem 2rem;
+        font-size: 0.9rem;
+        font-weight: normal;
+    }
+
+    .extremecold .extremecold_content .center-align {
+        display: block;
+        padding-top: 2rem;
+        padding-left: 37%;
+    }
+
+    .extremecold .extremecold_content .center-align .learnmore h3 {
+        font-size: 1.1rem;
+    }
+
+    .extremecold .extremecold_content .mobile-info {
+        display: none;
+    }
+}
+
+@media only screen and (max-height:45em) {
+    .extremecold .extremecold_content .center-align {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 56.25em) {
+    .extremecold {
+        padding-bottom: 4rem;
+    }
+
+    .extremecold .extremecold_content {
+        padding: 0 10rem;
+    }
+
+    .extremecold .extremecold_content h1 {
+        font-size:1.7rem;
+    } 
+
+    .extremecold .extremecold_content p {
+        margin: 2rem 0.2rem 2rem 3rem;
+        font-size: 0.95rem;
+    }
+
+    .extremecold .extremecold_content .center-align .learnmore h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 75em) {
+    .extremecold {
+        padding-bottom: 6rem;
+    }
+
+    .extremecold .extremecold_content {
+        padding: 0 18rem;
+    }
+
+    .extremecold .extremecold_content h1 {
+        font-size:2rem;
+    } 
+
+    .extremecold .extremecold_content p {
+        margin: 2rem 0.2rem 2rem 3rem;
+        font-size: 1rem;
+    }
+
+    .extremecold .extremecold_content .center-align {
+        padding-top: 2rem;
+        padding-left: 42%;
+    }
+}

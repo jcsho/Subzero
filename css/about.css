@@ -1,0 +1,119 @@
+.aboutus {
+    background-color: #e1e8ef;
+}
+
+.aboutus .aboutus_content {
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+    text-align: left;
+}
+
+@media only screen and (min-width: 20em) {
+    .aboutus {
+        padding-top: 7.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .aboutus .aboutus_content {
+        padding: 0 2rem;
+        font-size: 0.7rem;
+    }
+
+    .aboutus .aboutus_content h1 {
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    .aboutus .aboutus_content h2 {
+        font-size: 1rem;
+        margin: 1rem 0.5rem;
+    }
+
+    .aboutus .aboutus_content p {
+        margin: 1rem 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    .aboutus .aboutus_content figure {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 30em) {
+    .aboutus {
+        padding-bottom: 5rem;
+    }
+
+    .aboutus .aboutus_content {
+        padding: 0 6rem;
+        font-size: 0.7rem;
+    }
+
+    .aboutus .aboutus_content h2 {
+        margin: 1rem 2rem;
+    }
+
+    .aboutus .aboutus_content p {
+        margin: 1rem 3rem;
+    }
+}
+
+@media only screen and (min-width: 45em) {
+
+    .aboutus .aboutus_content {
+        padding: 0 7rem;
+        font-size: 0.7rem;
+    }
+
+    .aboutus .aboutus_content h1 {
+        font-size: 1.5rem;
+    }
+
+    .aboutus .aboutus_content h2 {
+        font-size: 1.2rem;
+        margin: 2rem 2rem;
+    }
+
+    .aboutus .aboutus_content p {
+        font-size: 0.9rem;
+        margin: 1.5rem 3rem;
+    }
+}
+
+@media only screen and (min-width: 75em) {
+    .aboutus {
+        padding-top: 8rem;
+        padding-bottom: 6rem;
+    }
+
+    .aboutus .aboutus_content {
+        padding: 0 20rem;
+        font-size: 0.7rem;
+    }
+
+    .aboutus .aboutus_content h1 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .aboutus .aboutus_content h2 {
+        font-size: 1rem;
+        margin: 1rem 2rem;
+    }
+
+    .aboutus .aboutus_content p {
+        margin: 1.5rem 3rem;
+        font-size: 1rem;
+    }
+
+    .aboutus .aboutus_content figure {
+        display: block;
+        margin: 1.3rem 0;
+    }
+
+    .aboutus .aboutus_content figure img {
+        width: 100%;
+        height: auto;
+    }
+}
