@@ -4,4 +4,4 @@ Online resource to inform and educate the people of Vancouver about the dangers 
 See Emergency Management Information.pdf for text version of information used in the project.
 
 
-[sitemap] (https://github.com/justinhodev/Subzero/blob/master/sitemap.pdf)
+![sitemap](https://github.com/justinhodev/Subzero/blob/master/sitemap.pdf "sitemap")
