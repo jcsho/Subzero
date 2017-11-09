@@ -1,7 +1,7 @@
 //code adapted from http://stackoverflow.com/questions/29242074/hiding-a-navigation-bar-with-hide
 //and http://api.jquery.com/
 function navbar() {
-    if (document.body.scrollTop > (3 * ($(".parallax-landing").height()) / 4)) {
+    if (document.documentElement.scrollTop > (3 * ($(".parallax-landing").height()) / 4)) {
         $(".top_nav").addClass(" past-landing");
         $(".nav_home").addClass(" past-landing");
     } else {
@@ -17,7 +17,7 @@ function navbar() {
 }
 
 function hide_logo() {
-    if (document.body.scrollTop > ($(".parallax-landing").height() / 6)) {
+    if (document.documentElement.scrollTop > ($(".parallax-landing").height() / 6)) {
         $(".landing-page").fadeOut(600);
     } else {
         $(".landing-page").fadeIn(400);
